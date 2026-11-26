@@ -1,0 +1,1 @@
+document.getElementById("contactForm").onsubmit=function(e){e.preventDefault();alert("Đã gửi tin nhắn. Cảm ơn bạn!");this.reset()};

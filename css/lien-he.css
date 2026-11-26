@@ -1,0 +1,63 @@
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--red:#e0202b;--dark:#14141f;--gray:#6b7280;--line:#e5e7eb}
+body{background:#fff;font-family:'Inter',sans-serif;color:var(--dark)}
+a{text-decoration:none;color:inherit}
+.topbar{background:var(--dark);color:#fff;font-size:12px;font-weight:600;height:30px;display:flex;justify-content:center;align-items:center;gap:30px}
+.topbar i{width:1px;height:12px;background:#666}
+header{overflow:hidden;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;background:#fff}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:20px;width:260px}
+.logo img{height:110px;width:auto;margin:-24px -30px -24px -30px;object-fit:contain;mix-blend-mode:multiply}
+.logo b{color:var(--red)}
+nav{display:flex;gap:6px;align-items:center;font-size:14px;font-weight:500}
+nav a{padding:8px 16px;border-radius:8px}
+nav a.active{background:var(--red);color:#fff;font-weight:700}
+.tools{display:flex;align-items:center;gap:16px;width:260px;justify-content:flex-end}
+.search{background:#f1f2f4;border-radius:20px;height:34px;width:150px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;font-size:12px;color:#9ca3af}
+.search input{border:0;background:transparent;outline:0;width:100px;font:inherit}
+.tools svg{width:18px;height:18px;stroke:var(--dark);fill:none;stroke-width:2}
+.pagehead{background:var(--dark);color:#fff;padding:18px 40px 22px}
+.pagehead small{font-size:11px;color:#9ca3af}
+.pagehead h1{font-size:30px;font-weight:800;font-style:italic;margin-top:8px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:34px;padding:34px 40px 20px}
+.contact h2{font-size:20px;font-weight:800;font-style:italic;margin-bottom:14px}
+.info{display:flex;align-items:center;gap:14px;padding:12px 10px;margin-bottom:6px;box-shadow:0 4px 6px -4px rgba(0,0,0,.15)}
+.ic{width:34px;height:34px;border-radius:50%;background:#fde8ea;display:grid;place-items:center;flex:none}
+.ic svg{width:15px;height:15px;stroke:var(--red);fill:none;stroke-width:2}
+.info small{font-size:10px;color:var(--gray);display:block}
+.info b{font-size:12px;font-weight:700}
+form h3{font-size:16px;font-weight:700;margin-bottom:12px}
+form label{display:block;font-size:11px;font-weight:700;margin:10px 0 5px}
+form input,form textarea{width:100%;border:1px solid var(--line);background:#f9fafb;border-radius:6px;padding:10px 12px;font:12px 'Inter';outline:0}
+form input:focus,form textarea:focus{border-color:var(--red)}
+form textarea{height:70px;resize:none}
+form button{width:100%;margin-top:10px;background:var(--red);color:#fff;border:0;border-radius:6px;padding:12px;font:700 12px 'Inter';cursor:pointer}
+.map{margin:6px 40px 24px;height:180px;border-radius:12px;position:relative;background:#e6eaef;overflow:hidden}
+.map img{width:100%;height:100%;object-fit:cover}
+.map .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-60%);text-align:center;font-size:10px;color:#4b5563}
+.map .pin svg{width:22px;height:22px;stroke:var(--red);fill:none;stroke-width:2;display:block;margin:0 auto 4px}
+footer{background:var(--dark);color:#fff;padding:26px 40px 14px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:20px;padding-bottom:20px;border-bottom:1px solid #2c2c3a}
+.fgrid h5{font-size:12px;font-weight:700;margin-bottom:10px}
+.fgrid p,.fgrid a{display:block;font-size:11px;color:#a3a3b0;margin-bottom:7px;line-height:1.5}
+.fgrid a:hover{color:#fff}
+.flogo{font-size:17px;font-weight:800;margin-bottom:8px}
+.flogo b{color:var(--red)}
+.copy{font-size:10px;color:#a3a3b0;padding-top:14px}
+@media (max-width:900px){
+  html,body{overflow-x:hidden}
+  img{max-width:100%}
+  .topbar{height:auto;min-height:30px;font-size:11px;gap:10px;padding:4px 8px;text-align:center}
+  header{height:auto;flex-wrap:wrap;padding:8px 16px;gap:8px}
+  .logo{width:auto;font-size:18px}
+  .logo img{height:44px;margin:0}
+  nav{order:3;width:100%;overflow-x:auto;white-space:nowrap;gap:4px}
+  nav a{padding:8px 12px;flex:none}
+  .tools{width:auto;margin-left:auto}
+  .search{display:none}
+  .pagehead,.intro,.stats,.values,.contact,.sec-head,.grid5,.features,.banners,footer{padding-left:16px;padding-right:16px}
+  .h2r,.cta,.map{margin-left:16px;margin-right:16px}
+  .wrap,.intro,.contact,.banners,.values{grid-template-columns:1fr}
+  .grid5,.grid3,.features,.stats,.fgrid{grid-template-columns:repeat(2,1fr)}
+  .cta{height:auto;flex-direction:column;gap:12px;padding:20px;text-align:center}
+  .hero{aspect-ratio:auto;min-height:420px}
+}

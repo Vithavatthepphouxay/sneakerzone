@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SneakerZone - Sản phẩm</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/san-pham.css">
+</head>
+<body>
+<div class="topbar"><span>Miễn phí vận chuyển cho đơn từ 1.000.000đ</span><i></i><span>Giảm 10% cho khách hàng mới</span></div>
+<header>
+  <a class="logo" href="index.html"><img src="images/logo.png" alt=""><span>Sneaker<b>Zone</b></span></a>
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a class="active" href="san-pham.html">Sản phẩm ⌄</a>
+    <a href="gioi-thieu.html">Giới thiệu</a>
+    <a href="tin-tuc.html">Tin tức</a>
+    <a href="lien-he.html">Liên hệ</a>
+  </nav>
+  <div class="tools">
+    <div class="search"><input placeholder="Tìm kiếm giày..."><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#14141f" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></div>
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+    <svg viewBox="0 0 24 24"><path d="M3 4h3l2 12h11l2-8H7"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+  </div>
+</header>
+
+<div class="pagehead"><small>Trang chủ / Sản phẩm</small><h1>Sản phẩm</h1></div>
+
+<div class="wrap">
+  <aside class="filter">
+    <h4>Thương hiệu</h4>
+    <label><input type="checkbox" checked> Nike</label>
+    <label><input type="checkbox"> Adidas</label>
+    <label><input type="checkbox"> Jordan</label>
+    <label><input type="checkbox"> Puma</label>
+    <label><input type="checkbox"> New Balance</label>
+    <h4 style="margin-top:14px">Khoảng giá</h4>
+    <label><input type="radio" name="gia" checked> Dưới 1.500.000đ</label>
+    <label><input type="radio" name="gia"> 1.500.000đ - 3.000.000đ</label>
+    <label><input type="radio" name="gia"> Trên 3.000.000đ</label>
+    <h4 style="margin-top:14px">Size</h4>
+    <div class="sizes" id="sizes"><button>38</button><button>39</button><button>40</button><button class="on">41</button><button>42</button><button>43</button></div>
+    <button class="apply" onclick="alert('Đã áp dụng bộ lọc')">Áp dụng bộ lọc</button>
+  </aside>
+  <main>
+    <div class="bar"><span>Hiển thị 6 trên 24 sản phẩm</span>
+      <select><option>Sắp xếp: Mới nhất</option><option>Giá tăng dần</option><option>Giá giảm dần</option></select></div>
+    <div class="grid3" id="list"></div>
+    <div class="pager" id="pager"><button class="on">1</button><button>2</button><button>3</button><button>›</button></div>
+  </main>
+</div>
+
+<footer>
+  <div class="fgrid">
+    <div><div class="flogo">Sneaker<b>Zone</b></div><p>Giày thể thao chính hãng – Phong cách dẫn đầu.<br>Giao nhanh toàn quốc, đổi trả trong 7 ngày.</p></div>
+    <div><h5>Danh mục</h5><a href="#">Giày chạy bộ</a><a href="#">Giày bóng rổ</a><a href="#">Giày sneaker</a><a href="#">Phụ kiện</a></div>
+    <div><h5>Hỗ trợ</h5><a href="#">Chính sách đổi trả</a><a href="#">Hướng dẫn chọn size</a><a href="#">Vận chuyển</a><a href="#">Câu hỏi thường gặp</a></div>
+    <div><h5>Liên hệ</h5><p>Hotline: 1900 0000</p><p>hotro@sneakerzone.vn</p><p>8:00 – 21:00 hằng ngày</p></div>
+  </div>
+  <div class="copy">© 2026 SneakerZone – Bản thiết kế minh họa</div>
+</footer>
+
+<script src="js/san-pham.js"></script>
+</body>
+</html>
